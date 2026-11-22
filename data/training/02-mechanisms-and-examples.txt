@@ -1,0 +1,33 @@
+VaultLens: synthetic incident mechanisms and worked reviews, version 1
+
+Scope
+
+The examples below are fictional teaching material. They illustrate the VaultLens labeling policy, not historical incidents or validated protocol assessments. They teach how to separate a mechanism from a consequence, how to quote evidence faithfully, and how to revise a conclusion when controls or authorization change the interpretation. Never copy a worked example's numbers into a different report. Only facts in the current report support the current review.
+
+Oracle exposure
+
+A synthetic report says: "The collateral feed last updated three hours ago. New loans still use that value. An independent reference is materially lower." The primary category is Oracle and provisional severity is High. Evidence includes "New loans still use that value" and the stale timestamp description. The suspected exposure is continued borrowing against outdated collateral information. The report does not establish the number of affected loans or whether any bad debt exists. Next checks are to compare the configured heartbeat with the latest update, inspect which price source the borrowing path actually uses, and identify whether protective limits or fallback rules are active. Do not claim confirmed loss merely because a price discrepancy exists.
+
+Contained oracle warning
+
+Another report says: "The primary feed missed its heartbeat. Borrowing automatically paused. The fallback was checked against two independent references and normal service resumed." Category is Oracle. Under the exercise policy, severity is Low because the report explicitly describes effective containment and restoration. Quote the pause and restoration evidence. State that this conclusion relies on the supplied account; it does not independently prove those controls worked. Verify the pause event, fallback selection, and resumption record. If the report instead says borrowing may still be enabled, uncertainty about current exposure must remain visible and the severity should be reconsidered.
+
+Liquidity pressure
+
+A report says: "The withdrawal queue is larger than immediately available reserves. The remaining assets mature in four days. No asset impairment is reported." Category is Liquidity and severity is Medium. Quote the queue and maturity evidence. Explain the timing mismatch without asserting insolvency. The next checks are the size and age of queued requests, the schedule and conditions for assets becoming liquid, and the accounting relationship between available reserves and obligations. Do not recommend that users withdraw, buy, sell, or borrow. The task is to help a reviewer understand what to verify, not to influence market behavior.
+
+Unsupported liquidity rumor
+
+A different report says: "Someone on a forum says withdrawals might stop next month." Category and severity are Unknown because there is no supported current operational observation. Quote the rumor with attribution rather than presenting it as fact. Ask for actual withdrawal failures, queue measurements, reserve information, or an official maintenance notice. Do not manufacture a maturity mismatch to force the report into Liquidity. If the input contains measured withdrawal delays, the category can become Liquidity even though their cause is still uncertain.
+
+Permission bypass
+
+A report says: "The execution trace shows an ordinary account changing the administrator despite the required authorization check. The new administrator retains upgrade permission." Category is Access control and severity is High. Quote both the bypass and continuing permission. The trace is reported evidence and has not been independently checked by the model. Verify the expected authorization rule for that contract version, inspect the exact state transition, and identify the remaining scope of privileged permissions. Do not provide attack instructions or claim that funds were transferred when the report only describes authority changing.
+
+Authorized administration
+
+A report says: "The administrator changed after the required multisignature approval and the documented delay. Monitoring found no unexpected state changes." An administrator change alone is not an incident. Use Unknown category and Low severity under this exercise policy because the report explicitly describes authorized activity and no observed anomaly. Explain that no supported access-control failure appears in the supplied facts. Verify the approval record and expected implementation if a reviewer needs assurance. Do not label every administrative event as malicious.
+
+Mixed and contradictory reports
+
+When a report mentions both stale collateral prices and a withdrawal queue, choose the best-supported causal mechanism as primary, and acknowledge the other observation separately. Do not infer causation solely from timing. When one sentence says all risky operations paused and another says new loans continued, quote the conflict and ask for the relevant block range or event chronology. Severity may be Unknown if the conflict prevents deciding whether exposure remains active. An explicit uncertainty is more useful than a confident answer built on silently discarding inconvenient evidence.
