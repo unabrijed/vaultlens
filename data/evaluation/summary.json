@@ -1,0 +1,51 @@
+{
+  "model": "model_01m818x0xgw183ts",
+  "date": "2026-11-23",
+  "productionPrompt": "baseline",
+  "totalRequests": 32,
+  "maxTokens": 500,
+  "temperature": 0.1,
+  "groups": [
+    {
+      "variant": "baseline",
+      "count": 8,
+      "categoryCorrect": 0,
+      "severityCorrect": 4,
+      "jointCorrect": 0,
+      "structured": 0,
+      "exactEvidence": 0,
+      "requestFailures": 0
+    },
+    {
+      "variant": "revised",
+      "count": 8,
+      "categoryCorrect": 0,
+      "severityCorrect": 0,
+      "jointCorrect": 0,
+      "structured": 7,
+      "exactEvidence": 2,
+      "requestFailures": 0
+    },
+    {
+      "variant": "revised-v2",
+      "count": 8,
+      "categoryCorrect": 0,
+      "severityCorrect": 0,
+      "jointCorrect": 0,
+      "structured": 1,
+      "exactEvidence": 1,
+      "requestFailures": 0
+    },
+    {
+      "variant": "revised-v3",
+      "count": 8,
+      "categoryCorrect": 0,
+      "severityCorrect": 1,
+      "jointCorrect": 0,
+      "structured": 4,
+      "exactEvidence": 2,
+      "requestFailures": 0
+    }
+  ],
+  "limitations": "Eight synthetic cases used for prompt development, not an independent final benchmark. Exact label matching; explanatory suffixes count as label failures. Missing and malformed answers remain in the denominator. Quote matches check text only, not reasoning. One response per case per prompt. No automatic score for factual correctness."
+}

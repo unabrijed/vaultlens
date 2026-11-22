@@ -1,0 +1,249 @@
+[
+  {
+    "id": "h01",
+    "variant": "revised-v3",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:29:56.728Z",
+    "expected": {
+      "category": "Oracle",
+      "severity": "High"
+    },
+    "text": "Category: Oracle (price-feed issue)\nSeverity: Medium (disruption or locked reserves without confirmed impairment)\nEvidence: Quote: \"A lending pool uses a price last refreshed 47 minutes ago despite a five-minute heartbeat. New borrowing continues at the cached value while the reference price is 18 percent lower.\"\nUncertainties: The heartbeat duration is not confirmed, and the reference price is lower than expected.\nNext Checks: Verify the heartbeat duration and compare it to the expected duration.",
+    "validation": {
+      "review": {
+        "category": "Oracle (price-feed issue)",
+        "severity": "Medium (disruption or locked reserves without confirmed impairment)",
+        "evidence": [
+          "A lending pool uses a price last refreshed 47 minutes ago despite a five-minute heartbeat. New borrowing continues at the cached value while the reference price is 18 percent lower."
+        ],
+        "uncertainties": [
+          "The heartbeat duration is not confirmed, and the reference price is lower than expected."
+        ],
+        "nextChecks": [
+          "Verify the heartbeat duration and compare it to the expected duration."
+        ]
+      },
+      "warnings": [
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric."
+      ],
+      "evidenceMatches": [
+        true
+      ],
+      "category": "Oracle (price-feed issue)",
+      "severity": "Medium (disruption or locked reserves without confirmed impairment)"
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  },
+  {
+    "id": "h02",
+    "variant": "revised-v3",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:30:00.088Z",
+    "expected": {
+      "category": "Liquidity",
+      "severity": "Medium"
+    },
+    "text": "Category: Liquidity (withdrawal/reserve timing mismatch)\nSeverity: Medium\nEvidence: Quote: \"Withdrawals are queued because available reserves cover only half of current requests. Other assets unlock in two days.\"\nUncertainties: No confirmed impairment.\nNext Checks: No further checks needed.",
+    "validation": {
+      "review": {
+        "category": "Liquidity (withdrawal/reserve timing mismatch)",
+        "severity": "Medium",
+        "evidence": [
+          "Withdrawals are queued because available reserves cover only half of current requests. Other assets unlock in two days."
+        ],
+        "uncertainties": [
+          "No confirmed impairment."
+        ],
+        "nextChecks": [
+          "No further checks needed."
+        ]
+      },
+      "warnings": [
+        "The model category is missing or outside the review rubric."
+      ],
+      "evidenceMatches": [
+        true
+      ],
+      "category": "Liquidity (withdrawal/reserve timing mismatch)",
+      "severity": "Medium"
+    },
+    "categoryCorrect": false,
+    "severityCorrect": true
+  },
+  {
+    "id": "h03",
+    "variant": "revised-v3",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:30:02.533Z",
+    "expected": {
+      "category": "Access control",
+      "severity": "High"
+    },
+    "text": "Category: Oracle (price-feed issue)\nSeverity: Medium (disruption or locked reserves without confirmed impairment)\nEvidence: Quote from the transaction trace: \"Upgrade administrator changed without signature, still has upgrade permission.\"\nUncertainties: No genuinely missing or conflicting facts.\nNext Checks: No read-only checks needed.",
+    "validation": {
+      "review": {
+        "category": "Oracle (price-feed issue)",
+        "severity": "Medium (disruption or locked reserves without confirmed impairment)",
+        "evidence": [
+          "Upgrade administrator changed without signature, still has upgrade permission."
+        ],
+        "uncertainties": [
+          "No genuinely missing or conflicting facts."
+        ],
+        "nextChecks": [
+          "No read-only checks needed."
+        ]
+      },
+      "warnings": [
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric.",
+        "Some evidence excerpts do not exactly match the report."
+      ],
+      "evidenceMatches": [
+        false
+      ],
+      "category": "Oracle (price-feed issue)",
+      "severity": "Medium (disruption or locked reserves without confirmed impairment)"
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  },
+  {
+    "id": "h04",
+    "variant": "revised-v3",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:30:05.061Z",
+    "expected": {
+      "category": "Unknown",
+      "severity": "Unknown"
+    },
+    "text": "Category: Unknown (no supported incident).\nSeverity: Medium (disruption or locked reserves without confirmed impairment).\nEvidence: No feed timestamps, protocol failures, or withdrawal data available.\nUncertainties: Lack of reliable price feeds, protocol failures, and withdrawal data.\nNext Checks: Verify the absence of any reported price feeds or withdrawal data, and ensure that the protocol is functioning correctly.",
+    "validation": {
+      "review": null,
+      "warnings": [
+        "The answer is missing required review sections or quoted evidence. The original answer is shown below.",
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric."
+      ],
+      "evidenceMatches": [],
+      "category": "Unknown (no supported incident).",
+      "severity": "Medium (disruption or locked reserves without confirmed impairment)."
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  },
+  {
+    "id": "h05",
+    "variant": "revised-v3",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:30:07.869Z",
+    "expected": {
+      "category": "Oracle",
+      "severity": "Low"
+    },
+    "text": "Category: Oracle (price-feed issue)\nSeverity: Medium (disruption or locked reserves without confirmed impairment)\nEvidence: No specific quotes or updates provided for the price feed issue.\nUncertainties: No genuinely missing or conflicting facts.\nNext Checks: No specific read-only checks needed.",
+    "validation": {
+      "review": null,
+      "warnings": [
+        "The answer is missing required review sections or quoted evidence. The original answer is shown below.",
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric."
+      ],
+      "evidenceMatches": [],
+      "category": "Oracle (price-feed issue)",
+      "severity": "Medium (disruption or locked reserves without confirmed impairment)"
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  },
+  {
+    "id": "h06",
+    "variant": "revised-v3",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:30:10.222Z",
+    "expected": {
+      "category": "Unknown",
+      "severity": "Low"
+    },
+    "text": "Category: Unknown (no supported incident).\nSeverity: Medium (disruption or locked reserves without confirmed impairment).\nEvidence: No specific details provided about unexpected state changes or locked reserves.\nUncertainties: No genuinely missing or conflicting facts.\nNext Checks: No read-only checks needed.",
+    "validation": {
+      "review": null,
+      "warnings": [
+        "The answer is missing required review sections or quoted evidence. The original answer is shown below.",
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric."
+      ],
+      "evidenceMatches": [],
+      "category": "Unknown (no supported incident).",
+      "severity": "Medium (disruption or locked reserves without confirmed impairment)."
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  },
+  {
+    "id": "h07",
+    "variant": "revised-v3",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:30:12.560Z",
+    "expected": {
+      "category": "Liquidity",
+      "severity": "Medium"
+    },
+    "text": "Low",
+    "validation": {
+      "review": null,
+      "warnings": [
+        "The answer is missing required review sections or quoted evidence. The original answer is shown below.",
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric."
+      ],
+      "evidenceMatches": [],
+      "category": null,
+      "severity": null
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  },
+  {
+    "id": "h08",
+    "variant": "revised-v3",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:30:13.003Z",
+    "expected": {
+      "category": "Oracle",
+      "severity": "Unknown"
+    },
+    "text": "Category: Oracle (price-feed issue)\nSeverity: Medium (disruption or locked reserves without confirmed impairment)\nEvidence: Quote from monitor 1: \"Borrowing paused during the stale feed interval.\"\nQuote from monitor 2: \"Successful new loans in the same interval.\"\nUncertainties: No genuinely missing or conflicting facts.\nNext Checks: No read-only checks needed.",
+    "validation": {
+      "review": {
+        "category": "Oracle (price-feed issue)",
+        "severity": "Medium (disruption or locked reserves without confirmed impairment)",
+        "evidence": [
+          "Borrowing paused during the stale feed interval.",
+          "Successful new loans in the same interval."
+        ],
+        "uncertainties": [
+          "No genuinely missing or conflicting facts."
+        ],
+        "nextChecks": [
+          "No read-only checks needed."
+        ]
+      },
+      "warnings": [
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric.",
+        "Some evidence excerpts do not exactly match the report."
+      ],
+      "evidenceMatches": [
+        false,
+        false
+      ],
+      "category": "Oracle (price-feed issue)",
+      "severity": "Medium (disruption or locked reserves without confirmed impairment)"
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  }
+]

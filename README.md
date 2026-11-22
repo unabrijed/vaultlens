@@ -1,6 +1,6 @@
 # VaultLens
 
-Educational DeFi incident-triage hiring exercise with fixed demo annotations and a server-side Nugen inference integration. Live inference through Railway has been verified with model_01m818x0xgw183ts. The first answer showed quality issues; full evaluation remains outstanding.
+Educational DeFi incident-triage hiring exercise with fixed demo annotations and a server-side Nugen inference integration. Live inference through Railway has been verified with model_01m818x0xgw183ts. A 32-request development comparison confirmed quality issues; see [evaluation results](docs/EVALUATION.md).
 
 ## Run
 
@@ -23,6 +23,8 @@ Implemented: responsive demo, custom-report inference route and UI, streaming re
 
 Prepared: two synthetic training documents, eight held-out cases, an API workflow CLI, and Docker packaging. See [deployment handoff](docs/DEPLOYMENT.md) for exact steps and environment variables.
 
-Verified: Nugen alignment READY, aligned model DEPLOYED, and live Railway inference HTTP 200. Railway hosts the API with private-token access. Vercel frontend creation is pending account connection.
+Verified: Nugen alignment READY, aligned model DEPLOYED, and live Railway inference HTTP 200. Railway hosts the API with private-token access. The frontend is live at https://vaultlens-steel.vercel.app/.
 
-Outstanding: evaluation runner and results, auditing the remote training inputs, browser validation/screenshots, and GitHub publication. Credit balance remains unconfirmed.
+Implemented: readable response rendering, evidence/label validation, and reproducible development evaluation with preserved raw answers. Stricter prompt candidates regressed, so the original prompt remains in production.
+
+Outstanding: improved model reliability, independent final evaluation, auditing the remote training inputs, and browser screenshots. Credit balance remains unconfirmed.

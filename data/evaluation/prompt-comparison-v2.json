@@ -1,0 +1,206 @@
+[
+  {
+    "id": "h01",
+    "variant": "revised-v2",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:28:48.191Z",
+    "expected": {
+      "category": "Oracle",
+      "severity": "High"
+    },
+    "text": "category: Liquidity, severity: Medium, evidence: [\"price last refreshed 47 minutes ago\", \"five-minute heartbeat\"], uncertainties: [\"new borrowing continues at the cached value while the reference price is 18 percent lower\"], nextChecks: [\"no further information available\"]",
+    "validation": {
+      "review": null,
+      "warnings": [
+        "The model did not return the required structured review. The original answer is shown below.",
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric."
+      ],
+      "evidenceMatches": [],
+      "category": "Liquidity, severity: Medium, evidence: [\"price last refreshed 47 minutes ago\", \"five-minute heartbeat\"], uncertainties: [\"new borrowing continues at the cached value while the reference price is 18 percent lower\"], nextChecks: [\"no further information available\"]",
+      "severity": null
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  },
+  {
+    "id": "h02",
+    "variant": "revised-v2",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:28:50.680Z",
+    "expected": {
+      "category": "Liquidity",
+      "severity": "Medium"
+    },
+    "text": "category: Access control, severity: Medium, evidence: \"available reserves cover only half of current requests\", \"other assets unlock in two days\", \"no impairment has been reported\", nextChecks: [\"check if other assets unlock faster\"]",
+    "validation": {
+      "review": null,
+      "warnings": [
+        "The model did not return the required structured review. The original answer is shown below.",
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric."
+      ],
+      "evidenceMatches": [],
+      "category": "Access control, severity: Medium, evidence: \"available reserves cover only half of current requests\", \"other assets unlock in two days\", \"no impairment has been reported\", nextChecks: [\"check if other assets unlock faster\"]",
+      "severity": null
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  },
+  {
+    "id": "h03",
+    "variant": "revised-v2",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:28:52.900Z",
+    "expected": {
+      "category": "Access control",
+      "severity": "High"
+    },
+    "text": "Unknown",
+    "validation": {
+      "review": null,
+      "warnings": [
+        "The model did not return the required structured review. The original answer is shown below.",
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric."
+      ],
+      "evidenceMatches": [],
+      "category": null,
+      "severity": null
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  },
+  {
+    "id": "h04",
+    "variant": "revised-v2",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:28:54.139Z",
+    "expected": {
+      "category": "Unknown",
+      "severity": "Unknown"
+    },
+    "text": "Unknown",
+    "validation": {
+      "review": null,
+      "warnings": [
+        "The model did not return the required structured review. The original answer is shown below.",
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric."
+      ],
+      "evidenceMatches": [],
+      "category": null,
+      "severity": null
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  },
+  {
+    "id": "h05",
+    "variant": "revised-v2",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:28:55.399Z",
+    "expected": {
+      "category": "Oracle",
+      "severity": "Low"
+    },
+    "text": "category: Access control, severity: Medium, evidence: [\"Borrowing paused as designed\", \"Operators validated the fallback\"], uncertainties: [\"No anomaly\"], nextChecks: [\"No confirmed loss or supported dangerous exposure\"]",
+    "validation": {
+      "review": null,
+      "warnings": [
+        "The model did not return the required structured review. The original answer is shown below.",
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric."
+      ],
+      "evidenceMatches": [],
+      "category": "Access control, severity: Medium, evidence: [\"Borrowing paused as designed\", \"Operators validated the fallback\"], uncertainties: [\"No anomaly\"], nextChecks: [\"No confirmed loss or supported dangerous exposure\"]",
+      "severity": null
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  },
+  {
+    "id": "h06",
+    "variant": "revised-v2",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:28:57.503Z",
+    "expected": {
+      "category": "Unknown",
+      "severity": "Low"
+    },
+    "text": "Unknown",
+    "validation": {
+      "review": null,
+      "warnings": [
+        "The model did not return the required structured review. The original answer is shown below.",
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric."
+      ],
+      "evidenceMatches": [],
+      "category": null,
+      "severity": null
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  },
+  {
+    "id": "h07",
+    "variant": "revised-v2",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:28:58.723Z",
+    "expected": {
+      "category": "Liquidity",
+      "severity": "Medium"
+    },
+    "text": "{\"category\": \"Unknown\", \"severity\": \"Low\", \"evidence\": [\"withdrawals are delayed because reserves are locked until tomorrow\", \"no loss is confirmed\"], \"uncertainties\": [\"Locked assets alone are not insolvency\"], \"nextChecks\": [\"verify withdrawal timing and confirm loss or supported dangerous exposure\"]}",
+    "validation": {
+      "review": {
+        "category": "Unknown",
+        "severity": "Low",
+        "evidence": [
+          "withdrawals are delayed because reserves are locked until tomorrow",
+          "no loss is confirmed"
+        ],
+        "uncertainties": [
+          "Locked assets alone are not insolvency"
+        ],
+        "nextChecks": [
+          "verify withdrawal timing and confirm loss or supported dangerous exposure"
+        ]
+      },
+      "warnings": [],
+      "evidenceMatches": [
+        true,
+        true
+      ],
+      "category": "Unknown",
+      "severity": "Low"
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  },
+  {
+    "id": "h08",
+    "variant": "revised-v2",
+    "model": "model_01m818x0xgw183ts",
+    "startedAt": "2026-11-22T19:29:01.254Z",
+    "expected": {
+      "category": "Oracle",
+      "severity": "Unknown"
+    },
+    "text": "category: Access control, severity: Medium, evidence: [\"monitor reports borrowing paused during stale feed interval\", \"another reports successful new loans in same interval\"], uncertainties: [\"whether borrowing paused\", \"whether new loans resolved\"], nextChecks: [\"verify stale feed interval\", \"check for new loans in same interval\"].",
+    "validation": {
+      "review": null,
+      "warnings": [
+        "The model did not return the required structured review. The original answer is shown below.",
+        "The model category is missing or outside the review rubric.",
+        "The model severity is missing or outside the review rubric."
+      ],
+      "evidenceMatches": [],
+      "category": "Access control, severity: Medium, evidence: [\"monitor reports borrowing paused during stale feed interval\", \"another reports successful new loans in same interval\"], uncertainties: [\"whether borrowing paused\", \"whether new loans resolved\"], nextChecks: [\"verify stale feed interval\", \"check for new loans in same interval\"].",
+      "severity": null
+    },
+    "categoryCorrect": false,
+    "severityCorrect": false
+  }
+]
